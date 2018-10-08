@@ -1,0 +1,100 @@
+/*Joseph Varilla
+Date: 4/28/18
+App: Archaeology
+Description: User tries to uncover all ruins
+User will get a 10 point bonus for uncovering two ruins in a row
+*/
+body {
+  text-align: center;
+  font-family: consolas;
+  background-color: black;
+}
+.halfScreen {
+  width: auto;
+  float: left;
+  height: inherit;
+  padding: 0%;
+  margin: 0%;
+}
+
+#digResponseContainer {
+  color: white;
+  background-color: black;
+  height: auto;
+  vertical-align: center;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  min-height:70px;
+  width: inherit;
+}
+.summaryPanel {
+  background-color: #7986CB;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.gameBoard {
+  cursor: crosshair;
+  background-color: black;
+  color: white;
+}
+
+.square:hover {
+  background-color: white;
+}
+table, tr, td {
+  margin: auto;
+  padding: auto;
+  width: inherit;
+}
+
+.ruinListItem {
+  text-align: left;
+  height: 20px;
+  width: inherit;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 2%;
+  color: white;
+}
+
+table {
+  width: inherit;
+}
+
+.modal {
+  z-index: 1;
+  position: fixed;
+  background-color: rgba(0,0,0,0.75);
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  padding-top: 10%;
+  align: center;
+  text-align:center;
+}
+
+#modalClose {
+  float: center;
+  padding: 0.5%;
+}
+
+.modalContent {
+  float: center;
+}
+
+button {
+  width: 300px;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+.dspStat {
+  background-color: #283593;
+  color: white;
+  width: auto;
+  }

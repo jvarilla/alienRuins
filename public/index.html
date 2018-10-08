@@ -1,0 +1,81 @@
+<!--
+/*Joseph Varilla
+Date: 4/28/18
+App: Archaeology
+Description: User tries to uncover all ruins
+User will get a 10 point bonus for uncovering two ruins in a row
+*/
+-->
+<!doctype html>
+<html>
+
+<!-- Archaeology game board -->
+<!-- Written by Craig Miller, April 2012 -->
+<!-- Modified by Craig Miller, September 2012 -->
+<!-- Updated January 2018 -->
+
+
+<head>
+<meta charset="UTF-8">
+<title>Game Board</title>
+<link rel="stylesheet" href="style.css"></link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+</script>
+<script type="text/javascript" src="board.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</head>
+
+<body>
+<div class = "modal">
+  <div class = "modalContent"></div>
+  <br>
+  <div id="playAgainBtn"><button><h2>Play Again</h2></button></div>
+  <div id="modalClose"><button><h2 id="pcBtn">Close</h2></button></div>
+</div>
+<table>
+  <tr>
+    <td class="gameBoard">
+      <h1>Archaeology Board</h1>
+      <table id="board"></table>
+    </td>
+    <td class="summaryPanel">
+      <h2>Progress Panel</h2>
+      <p>UI by Joseph Varilla</p>
+      <table>
+        <tr>
+          <td class="dspStat" >Total Clicks:<br>
+            <span id= "totalClicksDsp">0</span>
+          </td>
+          <td class="dspStat" >Score:<br>
+            <span id= "scoreDsp">0</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="dspStat" >Successful Clicks:<br>
+            <span id= "successfulClicksDsp">0</span>
+          </td>
+          <td class="dspStat" >Complete Ruins Uncovered:<br>
+            <span id= "ruinsUncoveredDsp">0</span>
+          </td>
+        </tr>
+      </table>
+
+      <div id="digResponseContainer">
+        <h4>Message:</h4>
+        <span id="digResponse">Start Digging</span>
+      </div>
+      <h3>Ruins List:</h3>
+      <div id="ruinListDsp">Here</div>
+      <div id="digCountDsp"></div>
+      <br>
+      <table>
+        <tr>
+          <td><button class="resetGameBtn"><h2>Reset</h2></button></td>
+          <td><button id="dspInstructionsBtn"><h2>Help</h2></button></td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
